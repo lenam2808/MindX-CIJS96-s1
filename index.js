@@ -70,24 +70,23 @@ const totalWorkingDays = employees.reduce((sum, employee) => {
 console.log(totalWorkingDays)
 
 //Bai 7
-// const highestSalary = Math.max.apply(Math, employees.map(employee => {
-//     return employee.salary
-// }))
-// console.log(highestSalary)
-let max = 0;
-for (let { salary } of employees) {
-  if (salary > max) {
-    max = salary;
-  }
-}
-console.log(max);
-let highestSalaryEmployee = employees.find(employee => (employee.salary == max))
-console.log(highestSalaryEmployee)
-// for (let { id, name, salary } of employees) {
-//   if (salary == max) {
-//     console.log(`id: ${id}, name: ${name}, salary: ${salary}`);
-//   }
+// const employees = [
+//     { id: 1, name: "John", salary: 2000 },
+//     { id: 2, name: "Jane", salary: 2500 },
+//     { id: 3, name: "Mark", salary: 3000 },
+// ];
+
+// let max = employees[0].salary;
+// let indexMax = 0;
+
+// for (let i=0; i<employees.length; i++) {
+//     const element = employees[i];
+//     if(element.salary > max) {
+//         max = element.salary;
+//         indexMax = i;
+//     }
 // }
+// console.log(employees[indexMax])
 
 //Bai 8
 // const employees = [
